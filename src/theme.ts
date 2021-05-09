@@ -3,7 +3,7 @@ import { createMuiTheme } from '@material-ui/core/styles';
 // Create a theme instance.
 const theme = createMuiTheme({
   typography: {
-    fontFamily: `"Teko", sans-serif`,
+    fontFamily: `"Montserrat", sans-serif`,
     button: {
       textTransform: 'none',
       letterSpacing: 'normal',
@@ -11,17 +11,14 @@ const theme = createMuiTheme({
   },
   palette: {
     primary: {
-      main: '#202225',
-      contrastText: '#FFF',
-      light: '#9C9C9C',
+      main: '#000000',
+      light: '#767676',
     },
     secondary: {
-      main: '#D08226',
-      contrastText: '#FFF',
-      light: '#339AF0',
+      main: '#ffffff',
     },
     background: {
-      default: '#F5F5F5',
+      default: '#f8f8f8',
     },
   },
 });
