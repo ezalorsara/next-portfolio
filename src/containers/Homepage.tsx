@@ -1,8 +1,9 @@
 import type { FC } from 'react';
-import { makeStyles, Typography, Avatar, Container } from '@material-ui/core';
+import { makeStyles, Typography, Container, useTheme } from '@material-ui/core';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { PageContainer } from '@components/PageContainer';
+import Image from 'next/image';
 
 const useStyles = makeStyles(({ breakpoints, palette, spacing }) => ({
   main: {
@@ -43,9 +44,11 @@ const useStyles = makeStyles(({ breakpoints, palette, spacing }) => ({
   heroAvatar: {
     width: spacing(34),
     height: spacing(34),
+    borderRadius: spacing(17),
     [breakpoints.down('md')]: {
       width: spacing(22),
       height: spacing(22),
+      borderRadius: spacing(11),
     },
   },
   socialLink: {
@@ -73,14 +76,18 @@ const useStyles = makeStyles(({ breakpoints, palette, spacing }) => ({
 
 export const Homepage: FC = () => {
   const classes = useStyles();
+  const { spacing } = useTheme();
 
   return (
     <PageContainer>
       <section className={classes.main}>
         <Container maxWidth="md">
           <div>
-            <Avatar
+            <Image
               src="https://avatars.githubusercontent.com/u/6506275?v=4"
+              alt="Picture of the author"
+              width={spacing(34)}
+              height={spacing(34)}
               className={classes.heroAvatar}
             />
           </div>
