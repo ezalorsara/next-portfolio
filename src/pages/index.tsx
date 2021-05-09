@@ -1,7 +1,8 @@
 import { NextPage } from 'next';
+import { Homepage } from '@containers/Homepage';
 
 const IndexPage: NextPage = () => {
-  return <h1>I'm Joed Parin</h1>;
+  return <Homepage />;
 };
 
 export default IndexPage;
