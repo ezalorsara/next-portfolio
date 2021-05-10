@@ -49,6 +49,7 @@ const useStyles = makeStyles(({ breakpoints, palette, spacing }) => ({
       width: spacing(22),
       height: spacing(22),
       borderRadius: spacing(11),
+      marginTop: 20,
     },
   },
   socialLink: {

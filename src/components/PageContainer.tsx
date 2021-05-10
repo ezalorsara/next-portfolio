@@ -8,6 +8,7 @@ import {
   Box,
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
 import dynamic from 'next/dynamic';
 
 const useStyles = makeStyles(() => ({
@@ -46,7 +47,7 @@ export const PageContainer: FC = props => {
     <>
       {isShowMenuIcon && (
         <Button className={classes.menuButton} onClick={handleMenuToggle}>
-          <MenuIcon />
+          {isShowSideMenu ? <CloseIcon /> : <MenuIcon />}
         </Button>
       )}
       <Box component="div" flex={1}>
