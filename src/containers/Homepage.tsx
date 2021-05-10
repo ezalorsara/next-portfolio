@@ -17,6 +17,7 @@ const useStyles = makeStyles(({ breakpoints, palette, spacing }) => ({
     alignItems: 'center',
     [breakpoints.down(1200)]: {
       paddingLeft: 0,
+      paddingTop: 40,
     },
     [breakpoints.down(600)]: {
       textAlign: 'center',
@@ -49,7 +50,6 @@ const useStyles = makeStyles(({ breakpoints, palette, spacing }) => ({
       width: spacing(22),
       height: spacing(22),
       borderRadius: spacing(11),
-      marginTop: 20,
     },
   },
   socialLink: {
